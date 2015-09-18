@@ -15,6 +15,9 @@
     </div>
     <div id="columns">
       <div id="side">
+        <div id="dateandtime">
+            <%= Time.now %>
+        </div>
         <div id="cart">
           <% if @cart %>
             <%= hidden_div_if(@cart.line_items.empty?, id:'cart') do %>
